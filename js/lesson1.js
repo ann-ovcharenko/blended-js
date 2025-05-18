@@ -150,3 +150,57 @@
 //   return sum;
 // }
 // console.log(calculateEvenTotal(6));
+
+// Приклад 3
+// Доповни код таким чином, щоб у змінну number записувалося перше число у проміжку від start до end, яке ділиться на 5 без остачі.
+// В коді є цикл for, в якому використовується break для можливості виходу з циклу до завершення всіх ітерацій
+
+// const start = 6;
+// const end = 17;
+// let number;
+// for (let i = start; i <= end; i++) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+//   }
+// }
+// console.log(number);
+
+// function findNumber(max, target) {
+//   console.log("Log in the body of the function before the cycle");
+
+//   for (let i = 5; i <= max; i += 1) {
+//     console.log("Current counter value i:", i);
+
+//     if (i === target) {
+//       console.log(
+//         `Found the number $ {target}, we make a return, interrupting the loop and function`
+//       );
+//       return i;
+//     }
+//   }
+
+//   // Цей console.log не виконується
+//   console.log("Log in body function after cycle");
+// }
+
+// const result = findNumber(10, 6);
+// console.log("Log after exiting function");
+// console.log(`Result of function execution ${result}`);
+
+// Приклад 4
+// Функція findNumber(start, end, divisor) приймає три параметра, які є цілими числами.
+
+// Доповни код функції таким чином, щоб вона:
+
+// повертала перше число у діапазоні від start до end включно, яке ділиться на divisor без остачі
+// не використовуй оператор break
+
+// function findNumber(start, end, divisor) {
+//   for (let i = start; i <= end; i++) {
+//     if (i % divisor === 0) {
+//       return i;
+//     }
+//   }
+// }
+// console.log(findNumber(2, 6, 5));
